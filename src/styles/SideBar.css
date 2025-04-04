@@ -1,0 +1,83 @@
+/* SideBar.css */
+
+  
+
+.multi-range-slider {
+	display: flex;
+	position: relative;
+	border: none;
+	border-radius: 10px;
+	padding: 20px 10px;
+	box-shadow: none;
+	flex-direction: column;
+}
+
+.multi-range-slider .bar-inner {
+	width: 25%;
+	background-color: #7800ff;
+	border-radius: 0px 10px 10px 0px;
+}
+
+/* Customizing the track (bar) */
+.custom-range::-webkit-slider-runnable-track {
+	background-color: #7800ff; /* Track color */
+  }
+  
+  .custom-range::-moz-range-track {
+	background-color: #7800ff; /* Track color for Firefox */
+  }
+  
+  .custom-range::-ms-track {
+	background-color: #7800ff; /* Track color for Internet Explorer */
+	border-color: transparent; /* Hide the border */
+  }
+  
+  /* Customizing the slider (thumb/button) */
+  /* Customizing the thumb for WebKit browsers (Chrome, Safari, etc.) */
+.custom-range::-webkit-slider-thumb {
+	background-color: white; /* Set thumb color to white */
+	border: 1px solid #ccc;
+	border-color: #7800ff; /* Optional: Add a border to make the thumb stand out */
+	width: 16px; /* Optional: Control thumb size */
+	height: 16px; /* Optional: Control thumb size */
+	border-radius: 50%; /* Make it circular */
+	appearance: none; /* Remove default appearance */
+  }
+  
+  /* Customizing the thumb for Firefox */
+  .custom-range::-moz-range-thumb {
+	background-color: white; /* Set thumb color to white */
+	border: 1px solid #ccc;
+	border-color: #7800ff; /* Optional: Add a border */
+	width: 16px; /* Control thumb size */
+	height: 16px; /* Control thumb size */
+	border-radius: 50%; /* Make it circular */
+  }
+  
+  /* Customizing the thumb for Internet Explorer/Edge */
+  .custom-range::-ms-thumb {
+	background-color: white; /* Set thumb color to white */
+	border: 1px solid #ccc;
+	border-color: #7800ff; /* Optional: Add a border */
+	width: 16px; /* Control thumb size */
+	height: 20px; /* Control thumb size */
+	border-radius: 50%; /* Make it circular */
+  }
+  
+
+  /* Customizing the border color */
+.custom-radio .form-check-input {
+  border-color: #7800ff; /* Border color */
+  background-color: transparent; /* Ensure it stays transparent */
+}
+
+/* Customizing the checked background color */
+.custom-radio .form-check-input:checked {
+  background-color: #7800ff; /* Background color when selected */
+  border-color: #7800ff; /* Keep the border color same */
+}
+
+/* Optional: Change label color when selected */
+.custom-radio .form-check-input:checked + .form-check-label {
+  color: #7800ff; /* Label color when selected */
+}

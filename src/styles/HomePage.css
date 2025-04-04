@@ -1,0 +1,34 @@
+/* Ensure the map-container is properly positioned */
+#map-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Ensure it doesn't expand beyond its parent */
+}
+
+.custom-overlay {
+    position: absolute !important; /* Ensure it's positioned within the parent */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background */
+    z-index: 999; /* Ensure it appears above other content */
+}
+
+.custom-pane {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1000; /* Ensure it appears above the overlay */
+}
+
+.shrink-wrapper {
+    transform: scale(0.80); /* Adjust scale as needed (0.85 = 85% of original size) */
+    transform-origin: top; /* Ensures scaling begins from the top left */
+    width: 100%;
+    height: 100%;
+    margin: 0 auto; /* Center if necessary */
+  }
+  

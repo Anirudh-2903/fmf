@@ -1,0 +1,72 @@
+.search-page {
+  background: url('https://uploads-ssl.webflow.com/6000a08f728f281d513bc67d/66705d4be5624fd58b8c8f9b_swimming.jpg') no-repeat;
+  background-size: cover;
+  padding: 20px 0;
+  text-align: center;
+   /* Center the content horizontally */
+}
+
+.search-title {
+  color: white;
+  font-size: 4em; /* Match the bold title look */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.search-form p {
+  color: white;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto; /* Add opaque background for readability */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 900px; /* Match the width of the form */
+}
+
+.search-form .form-control {
+  padding: 6px;
+  border-radius: 30px;
+  border: none;
+  margin: 10px 0;
+  width: 250px; /* Adjust the width of the input fields */
+  font-size: 1.1em; /* Increase font size */
+}
+
+.search-form .btn {
+  padding: 6px;
+  border-radius: 30px;
+  border: none;
+  margin: 10px 0;
+  width: 200px; /* Adjust the width of the input fields */
+  font-size: 1.1em; /* Increase font size */
+  background-color: #7800ff;
+}
+
+.search-form .btn:hover {
+  background-color: #7800ff; /* Darker purple on hover */
+}
+
+.search-form .badge {
+  background-color: #7800ff; /* Badge color to match the button */
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin: 5px;
+}
+
+@media (min-width: 1024px) {
+  .search-title {
+    font-size: 4.5em;
+  }
+}
+
+
+
+
+
+  

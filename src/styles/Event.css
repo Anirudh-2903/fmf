@@ -1,0 +1,177 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+
+.event-page {
+  position: relative;
+  top: -80px; /* Adjust as needed to overlap the image */
+  padding-top: 30px; /* Adjust for desired padding */
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width:70%/* Optional shadow for visual separation */
+}
+
+.event-heading {
+  position: absolute;
+  bottom: 90px; /* Adjust position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white; /* Adjust color as needed */
+
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 3rem; /* Adjust font size as needed */
+  text-align: center;
+}
+
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 45vh; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.image-container .event-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+  
+  .about-venue, .book-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .about-venue h1, .book-section h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .about-venue p, .contact-details p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .book-section .react-calendar {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .time-slots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .time-slot {
+    flex: 1 1 45%;
+    margin-bottom: 10px;
+    font-size: 14px;
+
+  }
+  
+  .details-section {
+    margin-top: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .details-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-details {
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .contact-details h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .react-calendar__tile.highlight {
+    background-color: #7E42F5; /* Your desired color */
+    color: white;             /* Text color */
+  }
+
+  .card-image-wrapper {
+    height: 200px; /* Fixed height for all card images */
+    width: 300px; /* Fixed width for all card images */
+    overflow: hidden; /* Ensures the image doesn't overflow */
+  }
+  
+  .card-image {
+    height: 200px; /* Fills the wrapper height */
+    width: 300px; /* Fills the wrapper width */
+    object-fit: cover; /* Keeps aspect ratio while covering the wrapper */
+  }
+  
+  .card {
+    max-width: 300px; /* Set a max width for the card */
+    margin: auto; /* Center align cards horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Clip content if necessary */
+  }
+  
+  .card-title {
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Bold title */
+    line-height: 1.2; /* Add spacing between lines */
+    word-wrap: break-word; /* Break long words */
+    margin-bottom: 8px;
+    text-align: left; /* Add spacing below the title */
+  }
+  
+  .card-price {
+    font-size: 14px; /* Font size for the price */
+    text-align: right; /* Right-align the price text */
+    margin-bottom: 8px;
+    text-align: right; /* Spacing below the price */
+  }
+  
+  .card-row {
+    margin-bottom: 8px; /* Spacing between rows */
+  }
+  
+  .card-provider,
+  .card-distance {
+    font-size: 14px; /* Adjust font size */
+    line-height: 1.5; /* Spacing between lines */
+    word-wrap: break-word;
+    text-align: left; /* Allow text wrapping */
+  }
+  
+  .card-provider {
+    margin-right: 8px; /* Add spacing to the right */
+  }
+  
+  .card-distance {
+    text-align: right; /* Right-align text */
+  }
+  
+  .card-body {
+    padding: 16px; /* Adjust padding for better spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute content evenly */
+  }
+  
+  .badge-auto-width {
+    display: inline-block; /* Ensures the badge only takes as much width as needed */
+    white-space: nowrap;  /* Prevents text wrapping to keep the badge's width exact */
+    padding: 0.25em 0.5em; /* Adjust padding for visual spacing */
+    text-align: center;    /* Centers text within the badge */
+    font-size: 0.875rem;   /* Optionally, set a consistent font size */
+  }
+  
+  

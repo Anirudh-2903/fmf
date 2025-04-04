@@ -1,0 +1,27 @@
+.dropdown-toggle-custom {
+    border: none;
+    padding: 0;
+    background: none;
+  }
+  
+  .dropdown-image {
+    width: 40px; /* Adjust the size as needed */
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu-custom {
+    background-color: #7800ff; /* Adjust color as needed */
+    border: none;
+    transform: translateX(-80px); /* Shift the dropdown to the left */
+  }
+  
+  .dropdown-menu-custom .nav-link {
+    color: white;
+    padding: 10px 15px;
+  }
+  
+  .dropdown-menu-custom .nav-link:hover {
+    background-color: #7800ff; /* Adjust hover color */
+  }
+  

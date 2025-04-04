@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Heading';
+  src: url('./assets/fonts/Babas-Neue/BebasNeue-Regular.ttf') format('truetype'); /* or woff/woff2 if applicable */
+}
+
+@font-face {
+  font-family: 'Subheading';
+  src: url('./assets/fonts/Montserrat-Black/Montserrat-Bold.ttf') format('truetype'); /* or woff/woff2 */
+}
+
+@font-face {
+  font-family: 'Default';
+  src: url('./assets/fonts/Montserrat-Black/Montserrat-Regular.ttf') format('truetype'); /* or woff/woff2 */
+}
+
+/* Apply the Default font globally */
+body, .App {
+  font-family: 'Default', sans-serif;
+}
+
+/* Optional: Apply again specifically to .App */
+.App {
+  text-align: center;
+  font-family: 'Default', sans-serif; /* Ensures the Default font in the app */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Specific Font Usage */
+
+/* Apply Heading font to h1 */
+h1, h2  {
+  font-family: 'Heading', sans-serif;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Default', sans-serif; 
+}
+
+/* Apply Subheading font to p */
+p {
+  font-family: 'Default', serif;
+}
+
+/* Extra class-specific styles */
+.search-title {
+  font-family: 'Heading', sans-serif;
+}
+
+.para {
+  font-family: 'Subheading', serif;
+}
+
+.subheading-font {
+  font-family: 'Subheading', serif; /* Define Subheading font */
+}
+
+.default-font {
+  font-family: 'Default', sans-serif; /* Define Default font */
+}
+

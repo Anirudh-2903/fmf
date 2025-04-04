@@ -1,0 +1,7 @@
+/* Custom styles for active pagination item */
+.custom-pagination .active-item {
+    background-color: #7800ff; /* Active background color */
+    color: white; /* Text color */
+    border: 1px solid #7800ff; /* Optional: border color to match background */
+  }
+  

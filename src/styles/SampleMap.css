@@ -1,0 +1,68 @@
+/* Styling for the InfoWindow content */
+.info-window-content {
+    width: 200px;
+    border-radius: 10px;
+    background-color: #7800ff; /* Matches the purple background color */
+    color: white;
+    overflow: hidden;
+    font-family: 'Subheading', serif;
+  }
+  
+  .info-window-image {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .info-window-content h4 {
+    font-size: 1rem;
+    margin: 10px 10px 0;
+    font-family: 'Default', sans-serif;
+  }
+  
+  .info-window-content p {
+    font-size: 0.9rem;
+    margin: 5px 10px 10px;
+  }
+  
+  .bookable-badge {
+    display: inline-block;
+    background-color: #7800ff; /* Darker purple for the "Bookable" badge */
+    color: white;
+    padding: 3px 8px;
+    font-size: 0.75rem;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+
+/* Override Google Maps InfoWindow styles */
+.gm-style .gm-style-iw-c {
+    padding: 0 !important; /* Remove padding */
+    margin: 0 !important; /* Remove margin */
+    max-width: none !important; /* Remove max-width constraint */
+    max-height: none !important; /* Remove max-height constraint */
+}
+
+.gm-style-iw-d {
+    overflow: hidden !important; /* Ensure there's no scroll overflow */
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Additional overrides for shadow and border removal */
+.gm-style .gm-style-iw-t::after,
+.gm-style .gm-style-iw-t::before,
+.gm-style .gm-style-iw-tc::after,
+.gm-style .gm-style-iw-tc::before {
+    display: none !important; /* Remove shadow and border */
+}
+
+.gm-style .gm-style-iw {
+    box-shadow: none !important; /* Remove box shadow */
+    border: none !important; /* Remove border */
+}
+
